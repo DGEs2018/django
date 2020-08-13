@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>About me Page !</h1> -->
+    {% for each in personaldetails%}
+        <h1>{{ personaldetails.name }}</h1>
+        <p>Born in {{ personaldetails.birthdate }} in { personaldetails.birthplace } </p>
+        <p>He does{{ personaldetails.profession }} for a living </p>
+    {% endfor %}
+</body>
+</html>
